@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F292AFB727E1345E00FE3AC3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F292AFB627E1345E00FE3AC3 /* MainView.swift */; };
+		F292AFB927E135DE00FE3AC3 /* IVView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F292AFB827E135DE00FE3AC3 /* IVView.swift */; };
+		F292AFBC27E140EA00FE3AC3 /* RegionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F292AFBB27E140EA00FE3AC3 /* RegionModel.swift */; };
 		F29C146B27DFF68C0027CEB4 /* PokedexApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29C146A27DFF68C0027CEB4 /* PokedexApp.swift */; };
 		F29C146D27DFF68C0027CEB4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29C146C27DFF68C0027CEB4 /* ContentView.swift */; };
 		F29C146F27DFF68D0027CEB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F29C146E27DFF68D0027CEB4 /* Assets.xcassets */; };
@@ -14,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F292AFB627E1345E00FE3AC3 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		F292AFB827E135DE00FE3AC3 /* IVView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IVView.swift; sourceTree = "<group>"; };
+		F292AFBB27E140EA00FE3AC3 /* RegionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionModel.swift; sourceTree = "<group>"; };
 		F29C146727DFF68C0027CEB4 /* Pokedex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pokedex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F29C146A27DFF68C0027CEB4 /* PokedexApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexApp.swift; sourceTree = "<group>"; };
 		F29C146C27DFF68C0027CEB4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +38,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F292AFB527E1332700FE3AC3 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F29C146A27DFF68C0027CEB4 /* PokedexApp.swift */,
+				F29C146C27DFF68C0027CEB4 /* ContentView.swift */,
+				F292AFB627E1345E00FE3AC3 /* MainView.swift */,
+				F292AFB827E135DE00FE3AC3 /* IVView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F292AFBA27E140CB00FE3AC3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F292AFBB27E140EA00FE3AC3 /* RegionModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		F29C145E27DFF68C0027CEB4 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +76,8 @@
 		F29C146927DFF68C0027CEB4 /* Pokedex */ = {
 			isa = PBXGroup;
 			children = (
-				F29C146A27DFF68C0027CEB4 /* PokedexApp.swift */,
-				F29C146C27DFF68C0027CEB4 /* ContentView.swift */,
+				F292AFBA27E140CB00FE3AC3 /* Model */,
+				F292AFB527E1332700FE3AC3 /* App */,
 				F29C146E27DFF68D0027CEB4 /* Assets.xcassets */,
 				F29C147027DFF68D0027CEB4 /* Preview Content */,
 			);
@@ -138,7 +163,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F29C146D27DFF68C0027CEB4 /* ContentView.swift in Sources */,
+				F292AFB927E135DE00FE3AC3 /* IVView.swift in Sources */,
+				F292AFB727E1345E00FE3AC3 /* MainView.swift in Sources */,
 				F29C146B27DFF68C0027CEB4 /* PokedexApp.swift in Sources */,
+				F292AFBC27E140EA00FE3AC3 /* RegionModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +305,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,6 +335,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
